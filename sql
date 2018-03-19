@@ -22,3 +22,17 @@ If the shit happen
 DROP DATABASE dbERP_New_Data
 GO
 ```
+
+Find junk tables.
+```
+SELECT 'Table Name'=convert(char(25),t.TABLE_NAME),
+      'Total Record Count'=max(i.rows)
+FROM sysindexes i, INFORMATION_SCHEMA.TABLES t
+WHERE t.TABLE_NAME = object_name(i.id)
+      and t.TABLE_TYPE = 'BASE TABLE'
+GROUP BY t.TABLE_SCHEMA, t.TABLE_NAME
+HAVING max(i.rows)<=0
+```
+Ref https://stackoverflow.com/questions/17748417/sql-server-management-studio-finding-all-non-empty-tables
+
+

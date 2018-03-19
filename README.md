@@ -24,7 +24,7 @@ You have to open in the text editor copy&paste the output from them.
 I use normal terminal and lines are very long and mess up the columns.
 In my case `LogicalName` are `dbERP_New_Data` and `dbERP_New_Log`
 
-
+Therefore my execution lines will be
 ```
 1> RESTORE DATABASE dbERP_New_Data
 2> FROM DISK = '/trash/dbWINS_MPMBA201803141100.bak'
@@ -32,6 +32,8 @@ In my case `LogicalName` are `dbERP_New_Data` and `dbERP_New_Log`
 4> MOVE 'dbERP_New_Log' TO '/root/dbERP_New_Log.ldf'
 5> GO
 ```
+And you are done
+
 
 ## Cautions
 DO NOT USE HOST-VOLUME TO HANDLE THE NEW BULKFILES OF RESTORED DATABASE

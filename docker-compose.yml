@@ -10,3 +10,5 @@ services:
       - type: bind
         source: ./data
         target: /trash
+    ports:
+      - "1433:1433"
