@@ -1,0 +1,15 @@
+[Not work]
+
+https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-backup-and-restore-database
+sqlcmd -S localhost -U SA -Q "RESTORE DATABASE mytrash FROM DISK = '/trash/dbWINS_MPMBA201803141100.bak' WITH FILE = 1, NOUNLOAD, REPLACE, NORECOVERY, STATS = 5"
+Ask here. [Good Progress]
+https://stackoverflow.com/questions/49358950/ms-sql-server-linux-docker-asking-for-file-in-d
+
+Not work
+http://www.sqlservergeeks.com/restore-sql-server-database-from-bak-file-command-line/
+
+[In progress]
+LogicalName
+dbERP_New_Data
+dbERP_New_Log
+https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-migrate-restore-database#restore-your-database-on-linux

@@ -1,0 +1,12 @@
+version: "3.5"
+
+services:
+  mssql:
+    image: "microsoft/mssql-server-linux"
+    environment:
+      SA_PASSWORD: "s1EgHeilahBu3Eef"
+      ACCEPT_EULA: "Y"
+    volumes:
+      - type: bind
+        source: ./data
+        target: /trash
