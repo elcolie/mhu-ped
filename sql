@@ -1,3 +1,8 @@
+Single line ready. Can not bundle to `yml` file because `command` execute before
+container initialization finish
+1. `/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -i /trash/execute.sql`
+
+
 1. Login with `/opt/mssql-tools/bin/sqlcmd -S localhost -U SA`
 1. Execute the follows
 ```
